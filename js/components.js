@@ -9,18 +9,21 @@
 
     // Component file paths (relative to site root)
     const COMPONENTS = {
-        nav: '/components/nav.html',
-        footer: '/components/footer.html',
-        chatbot: '/components/chatbot.html'
+        nav: 'components/nav.html',
+        footer: 'components/footer.html',
+        chatbot: 'components/chatbot.html'
     };
 
-    const CHATBOT_CSS = '/components/chatbot.css';
-    const CHATBOT_JS = '/components/chatbot.js';
+    const CHATBOT_CSS = 'components/chatbot.css';
+    const CHATBOT_JS = 'components/chatbot.js';
 
     // Detect current page for active-nav highlighting.
-    // Strips .html and trailing slash; handles "/", "/products/", "/about" etc.
-    const pathParts = window.location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
-    const currentPage = pathParts[0] || 'index';
+    // Uses the page filename (last path segment), so it works on root domain
+    // (davaus.com/seedright.html) AND GitHub Pages subpath (user.github.io/davaus/seedright.html).
+    const lastSegment = window.location.pathname
+        .replace(/\/$/, '')           // strip trailing slash
+        .split('/').pop() || '';      // grab final segment
+    const currentPage = lastSegment.replace(/\.html$/, '') || 'index';
 
     /**
      * Load HTML component into a placeholder element

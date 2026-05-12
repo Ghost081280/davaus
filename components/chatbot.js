@@ -250,13 +250,13 @@ function initChatbot() {
         const msg = message.toLowerCase();
 
         if (msg.includes('seedright') || msg.includes('seed right') || msg.includes('cover crop') || msg.includes('seed plate')) {
-            return "SeedRight lets you plant cover crops and small grains right from your planter, no seed drill required. Large-cell discs handle wheat, oats, cereal rye, and triticale. Small-cell discs handle radishes, turnips, crimson clover, rape seed, and rye grasses. Compatible with John Deere, Precision Planting, and Kinze vacuum meters. See <a href='/seedright.html'>the SeedRight page</a> for details.";
+            return "SeedRight lets you plant cover crops and small grains right from your planter, no seed drill required. Large-cell discs handle wheat, oats, cereal rye, and triticale. Small-cell discs handle radishes, turnips, crimson clover, rape seed, and rye grasses. Compatible with John Deere, Precision Planting, and Kinze vacuum meters. See <a href='seedright.html'>the SeedRight page</a> for details.";
         }
         if (msg.includes('kernel keeper') || msg.includes('kernel') || msg.includes('corn head') || msg.includes('deck plate')) {
-            return "The Kernel Keeper is a deck-mounted rail and finger-brush system that cushions, captures, and collects loose kernels at the corn head. Save just one kernel per acre (half a bushel) and you're looking at a 150%+ ROI. No replacement deck plates required, the kit includes a drill bit. Fits John Deere 600/700/C Series, Case IH 800/900/1000, and most New Holland 96C–996 heads. More on <a href='/kernel-keeper.html'>the Kernel Keeper page</a>.";
+            return "The Kernel Keeper is a deck-mounted rail and finger-brush system that cushions, captures, and collects loose kernels at the corn head. Save just one kernel per acre (half a bushel) and you're looking at a 150%+ ROI. No replacement deck plates required, the kit includes a drill bit. Fits John Deere 600/700/C Series, Case IH 800/900/1000, and most New Holland 96C–996 heads. More on <a href='kernel-keeper.html'>the Kernel Keeper page</a>.";
         }
         if (msg.includes('ride tamer') || msg.includes('mower') || msg.includes('zero turn') || msg.includes('suspension')) {
-            return "Ride Tamer is a retrofit elastomeric suspension system for zero-turn mowers. It reduces operator impact by more than 47%, smooths the cut, and lowers frame stress. Installs to your existing front fork in under 15 minutes. Wear parts are serviceable. See <a href='/ride-tamer.html'>the Ride Tamer page</a> for video and details.";
+            return "Ride Tamer is a retrofit elastomeric suspension system for zero-turn mowers. It reduces operator impact by more than 47%, smooths the cut, and lowers frame stress. Installs to your existing front fork in under 15 minutes. Wear parts are serviceable. See <a href='ride-tamer.html'>the Ride Tamer page</a> for video and details.";
         }
         if (msg.includes('dealer') || msg.includes('buy') || msg.includes('where') || msg.includes('locate')) {
             return "We have a dealer network across the country. <a href='https://www.zeemaps.com/view?group=3753470' target='_blank' rel='noopener'>Open the dealer locator map</a> to find one near you, or call us at 260-245-5006.";
@@ -268,7 +268,7 @@ function initChatbot() {
             return "Davaus is a family-run agricultural products company in Hoagland, Indiana. We started with SeedRight, a Convoy, Ohio farmer who wondered if he could do more with less from his Kinze planter. Today we engineer practical solutions rooted in agronomy and built to improve the grower's bottom line.";
         }
         if (msg.includes('shop') || msg.includes('order') || msg.includes('price') || msg.includes('cost')) {
-            return "Pricing and direct ordering for plates, parts, and apparel is on <a href='/shop.html'>our shop page</a>. For Kernel Keeper or Ride Tamer kits, we'll route you to your nearest dealer.";
+            return "Pricing and direct ordering for plates, parts, and apparel is on <a href='shop.html'>our shop page</a>. For Kernel Keeper or Ride Tamer kits, we'll route you to your nearest dealer.";
         }
         if (msg.includes('install') || msg.includes('how') && msg.includes('work')) {
             return "Installation depends on the product, Ride Tamer is under 15 minutes to your existing front fork, Kernel Keeper requires no new deck plates (drill bit included), and SeedRight plates swap right into your vacuum meter. We have install videos and brochures on each product page.";
