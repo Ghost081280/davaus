@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Editors
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Dependencies (no build step today, but future-proof)
+node_modules/
+.cache/
+
+# Build artifacts
+dist/
+build/
+.parcel-cache/
+
+# Local dev
+.python_history
+__pycache__/
+*.pyc
